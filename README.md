@@ -14,19 +14,3 @@ SecuroSafe is a Manifest V3 Chrome extension that acts as an educational assista
 The SecuroSafe popup providing an educational analysis of a user-submitted headline.
 
 The clean and simple options page to manage your preferences.
-
-📂 Project Structure
-/
-|-- icons/                  # Extension icons (16x16, 48x48, 128x128)
-|-- manifest.json           # Core extension configuration file
-|-- background.js           # Service worker for background tasks (e.g., API calls)
-|-- content_script.js       # Injected into web pages to extract metadata
-|-- popup.html              # The HTML structure for the extension popup
-|-- popup.js                # The logic and interactivity for the popup
-|-- popup.css               # The styling for the popup
-|-- options.html            # The HTML for the settings page
-|-- options.js              # The logic for the settings page
-|-- options.css             # The styling for the settings page
-|-- README.md               # This file
-|-- Firebase Cloud Function/
-|   |-- index.js            # Node.js code for the backend analysis function
