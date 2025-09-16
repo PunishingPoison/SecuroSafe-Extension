@@ -20,7 +20,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
  * @returns {Promise<object>} A promise that resolves with the API result.
  */
 async function checkUrlWithSafeBrowsing(url) {
-  if (SAFE_BROWSING_API_KEY === 'AIzaSyAMSx8R_BvHGKmOSgsCSg4V_JCYbJCTBMc') {
+  if (SAFE_BROWSING_API_KEY === 'YOUR_SAFE_BROWSING_API_KEY') {
     console.log("Safe Browsing API key not found. Returning mock data.");
     return Promise.resolve({ matches: [] }); 
   }
@@ -96,4 +96,5 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
             }
         });
     }
+
 });
