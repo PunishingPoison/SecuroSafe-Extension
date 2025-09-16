@@ -1,0 +1,151 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    width: 380px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+h1 {
+    display: inline;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1a73e8;
+    vertical-align: middle;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #5f6368;
+    margin-top: 5px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #3c4043;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    resize: vertical;
+    min-height: 80px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #185abc;
+}
+
+.result-box {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+
+.result-box.warning {
+    background-color: #fffbeb;
+    border-color: #fdd835;
+}
+
+.result-box.safe {
+    background-color: #e6f4ea;
+    border-color: #81c995;
+}
+
+.result-box h3 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #202124;
+}
+
+.result-box ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.result-box li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #1a73e8;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.options-link {
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.options-link:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 25px 0;
+}

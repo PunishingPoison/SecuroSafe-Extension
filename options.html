@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Securo/Safe Options</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Securo/Safe Settings</h1>
+        <div class="option">
+            <label for="auto-check">
+                <input type="checkbox" id="auto-check">
+                Automatically scan pages on visit
+            </label>
+            <p class="description">
+                When enabled, Securo/Safe will automatically use Google Safe Browsing to check websites you visit for known threats. A warning icon will appear if a potential risk is found.
+            </p>
+        </div>
+
+        <div class="option">
+            <h2>Privacy</h2>
+            <p class="description">
+                Securo/Safe is designed with your privacy in mind.
+                <ul>
+                    <li>The automatic scan only sends the URL you visit to Google's Safe Browsing service. No other data is sent.</li>
+                    <li>The on-demand fact-check only sends the text or URL you explicitly enter in the popup to our analysis service.</li>
+                    <li>We do not store or track your browsing history.</li>
+                </ul>
+            </p>
+        </div>
+
+        <div id="status"></div>
+        <button id="save-button">Save Settings</button>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html>

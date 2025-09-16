@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Securo/Safe</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="icons/icon48.png" alt="Securo/Safe Logo" class="logo">
+            <h1>Securo/Safe</h1>
+            <p class="subtitle">Your Educational Guide to Online Credibility</p>
+        </header>
+
+        <main>
+            <div id="loader" class="loader" style="display: none;"></div>
+            <div id="currentPageAnalysis">
+                <h2>Current Page Scan</h2>
+                <div id="page-info">
+                    <p>Scanning the current page for credibility signals...</p>
+                </div>
+                <div id="safe-browsing-result" class="result-box" style="display: none;"></div>
+            </div>
+
+            <hr>
+
+            <div id="onDemandCheck">
+                <h2>Fact-Check a Link or Text</h2>
+                <p>Paste a URL or a piece of text to get an educational analysis.</p>
+                <textarea id="text-input" placeholder="Enter a URL or text here..."></textarea>
+                <button id="analyze-button">Analyze</button>
+                <div id="analysis-result" class="result-box" style="display: none;"></div>
+            </div>
+        </main>
+        <footer>
+            <a href="options.html" target="_blank" class="options-link">Settings</a>
+        </footer>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
